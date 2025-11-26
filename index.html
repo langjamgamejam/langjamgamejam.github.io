@@ -1,220 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Langjam Gamejam</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        image-rendering: pixelated;
-      }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, sans-serif;
-        line-height: 1.6;
-        color: #333;
-        background: #fafafa;
-      }
-
-      .container {
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 60px 20px;
-      }
-
-      .header {
-        text-align: center;
-        margin-bottom: 40px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .logo {
-        max-width: 200px;
-        height: auto;
-        margin-bottom: 2px;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-        font-weight: 700;
-        margin-bottom: 20px;
-        color: #1a1a1a;
-        letter-spacing: -0.02em;
-      }
-
-      .tagline {
-        font-size: 1.25rem;
-        color: #666;
-        font-weight: 400;
-      }
-
-      .content {
-        background: white;
-        padding: 30px 40px;
-        border-radius: 8px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      }
-
-      .section {
-        margin-bottom: 30px;
-      }
-
-      .section:last-child {
-        margin-bottom: 0;
-      }
-
-      h2 {
-        font-size: 1.75rem;
-        margin-bottom: 20px;
-        color: #1a1a1a;
-        font-weight: 600;
-      }
-
-      p {
-        margin-bottom: 15px;
-        color: #555;
-        font-size: 1.05rem;
-      }
-
-      ul {
-        margin-left: 20px;
-        margin-bottom: 15px;
-      }
-
-      li {
-        margin-bottom: 10px;
-        color: #555;
-        font-size: 1.05rem;
-      }
-
-      .links {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 15px;
-        margin-top: 20px;
-      }
-
-      .link {
-        display: inline-block;
-        padding: 12px 24px;
-        background: #1a1a1a;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-        font-weight: 500;
-        transition: background 0.2s;
-      }
-
-      .link:hover {
-        background: #333;
-      }
-
-      .footer {
-        text-align: center;
-        margin-top: 50px;
-        padding-top: 30px;
-        color: #999;
-        font-size: 0.9rem;
-      }
-
-      .footer a {
-        color: #0066cc;
-        text-decoration: underline;
-      }
-
-      .footer a:hover {
-        color: #004499;
-      }
-
-      .dragon {
-        width: 200px;
-        height: 128px;
-
-        mask: url("langjamgamejam_dragon.png") center/contain no-repeat;
-        -webkit-mask: url("langjamgamejam_dragon.png") center/contain no-repeat;
-
-        background-color: rgb(12, 30, 57);
-      }
-
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 2.5rem;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fafafa;
         }
 
         .container {
-          padding: 40px 15px;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 60px 20px;
         }
 
-        .content {
-          padding: 30px 25px;
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 2px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            letter-spacing: -0.02em;
         }
 
         .tagline {
-          font-size: 1.1rem;
+            font-size: 1.25rem;
+            color: #666;
+            font-weight: 400;
         }
-      }
+
+        .content {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section:last-child {
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+            font-size: 1.05rem;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #1a1a1a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+
+        .link:hover {
+            background: #333;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 30px;
+            color: #999;
+            font-size: 0.9rem;
+        }
+
+        .footer a {
+            color: #0066cc;
+            text-decoration: underline;
+        }
+
+        .footer a:hover {
+            color: #004499;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .container {
+                padding: 40px 15px;
+            }
+
+            .content {
+                padding: 30px 25px;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+        }
     </style>
-    <link rel="icon" type="image/png" href="/favicon.png" />
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <div class="header">
-        <div class="dragon"></div>
-        <h1>Langjam Gamejam</h1>
-        <p class="tagline">
-          A 7-day hackathon where you build a programming language and then make
-          a game using it.
-        </p>
-        <p><b>Dates: December 14, 2025 - December 20, 2025</b></p>
-      </div>
-
-      <div class="content">
-        <div class="section">
-          <p>
-            Langjam Gamejam is a 7-day challenge to create a programming
-            language and then use that language to build a game. You set the
-            rules. Be as creative as possible, use any technologies you want,
-            and have fun. There will be prizes to the most creative submissions!
-          </p>
+        <div class="header">
+            <img src="langjamgamejam_dragon.png" alt="Langjam Gamejam's retro dragon mascot." class="logo">
+            <h1>Langjam Gamejam</h1>
+            <p class="tagline">A 7-day hackathon where you build a programming language and then make a game using it.</p>
+            <p><b>Dates: December 14, 2025 - December 20, 2025</b></p>
         </div>
 
-        <div class="section">
-          <h2>Rules</h2>
-          <ul>
-            <li>The hackathon runs for 7 days</li>
-            <li>You must design and implement a programming language</li>
-            <li>The must design and implement a game using your language</li>
-            <li>
-              You can use any language, engine, libraries, and technologies
-            </li>
-            <li>
-              You define what a programming language is and what a game is
-            </li>
-            <li>Work solo or on a team</li>
-            <li>Documentation and instructions are encouraged</li>
-            <li>
-              <b>Bonus points:</b> Write a blog post about your language, game,
-              and design process
-            </li>
-          </ul>
+        <div class="content">
+            <div class="section">
+                <p>Langjam Gamejam is a 7-day challenge to create a programming language and then use that language to build a game. You set the rules. Be as creative as possible, use any technologies you want, and have fun. There will be prizes to the most creative submissions!</p>
+            </div>
+
+            <div class="section">
+                <h2>Rules</h2>
+                <ul>
+                    <li>The hackathon runs for 7 days</li>
+                    <li>You must design and implement a programming language</li>
+                    <li>The must design and implement a game using your language</li>
+                    <li>You can use any language, engine, libraries, and technologies</li>
+                    <li>You define what a programming language is and what a game is</li>
+                    <li>Work solo or on a team</li>
+                    <li>Documentation and instructions are encouraged</li>
+                    <li><b>Bonus points:</b> Write a blog post about your language, game, and design process</li>
+                </ul>
+            </div>
+
+            <p>Submit your language and game on <a href="https://itch.io/jam/langjamgamejam">Itch.io</a>.</p>
+
         </div>
 
-        <p>
-          Submit your language and game on
-          <a href="https://itch.io/jam/langjamgamejam">Itch.io</a>.
-        </p>
-      </div>
-
-      <div class="footer">
-        © 2025 <a href="https://austinhenley.com">Austin Z. Henley</a>
-      </div>
+        <div class="footer">
+            © 2025 <a href="https://austinhenley.com">Austin Z. Henley</a>
+        </div>
     </div>
-  </body>
+</body>
 </html>
+
